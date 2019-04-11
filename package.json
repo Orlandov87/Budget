@@ -1,0 +1,22 @@
+{
+  "name": "budget",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orlandov87/Budget.git"
+  },
+  "author": "Orlando Vargas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Orlandov87/Budget/issues"
+  },
+  "homepage": "https://github.com/Orlandov87/Budget#readme",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}
