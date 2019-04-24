@@ -1,6 +1,5 @@
 const electron = require('electron')
 
-
 const { app, BrowserWindow } = require('electron')
 
 // Keep a global reference of the windows objet, if you don't, the window will
@@ -9,7 +8,8 @@ let win
 
 function createWindow() {
   // Create the browser window.
-  win = new BrowserWindow({ width: 1200, height: 800, titleBarStyle: 'hidden' })
+  win = new BrowserWindow({ width: 1200, height: 800, titleBarStyle: 'hidden'})
+  win.setMenu(null)
 
   // and load the index.html of the app.
   win.loadFile('index.html')
