@@ -1,10 +1,9 @@
 const electron = require('electron')
 
-
 const { app, BrowserWindow } = require('electron')
 
-// Keep a global reference of the windows objet, if you don't, the window will
-// be closed automatically whne the JavaScript object is garbage collected.
+// Keep a global reference of the windows object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
 let win
 
 function createWindow() {
@@ -19,12 +18,11 @@ function createWindow() {
 
   // Emitted when the window is closed.
   win.on('closed', () => {
-    // Dereference teh window object, usually you would store windows
+    // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
-    // when you should delete thte corresponding element.
+    // when you should delete the corresponding element.
     win = null
   })
-
 }
 
 // This method will be called when Electron has finished
@@ -43,7 +41,7 @@ app.on('window-all-closed', () => {
 
 // On macOs it's common to re-create a window in the app when the
 // dock icon is clicked and there are no other windows open.
-app.on('activitate', () => {
+app.on('activate', () => {
   if (win === null) {
     createWindow()
   }
